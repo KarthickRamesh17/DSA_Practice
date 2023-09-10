@@ -8,14 +8,11 @@ class Solution {
         for(int i =0 ;i<n;i++)
         {
             sum += nums[i];
-            
-
             if(sum<0)
             {
                 sum = 0;
 
             }
-
             if(sum>max)
             {
                 max = sum;
