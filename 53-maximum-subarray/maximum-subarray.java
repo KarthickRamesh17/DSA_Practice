@@ -8,25 +8,26 @@ class Solution {
         for(int i =0 ;i<n;i++)
         {
             sum += nums[i];
+            
+            if(sum>max)
+            {
+                max = sum;
+            }
             if(sum<0)
             {
                 sum = 0;
 
             }
-            if(sum>max)
-            {
-                max = sum;
-            }
             
         }
-        if(max==0)
-        {
-            max = Integer.MIN_VALUE;
-            for(int i=0;i<n;i++)
-            {
-                max= Math.max(max,nums[i]);
-            }
-        }
+        // if(max==0)
+        // {
+        //     max = Integer.MIN_VALUE;
+        //     for(int i=0;i<n;i++)
+        //     {
+        //         max= Math.max(max,nums[i]);
+        //     }
+        // }
         return max;
         
     }
