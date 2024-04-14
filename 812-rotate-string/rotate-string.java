@@ -3,7 +3,7 @@ class Solution {
         if(s.length()!=goal.length()){
             return false;
         }
-        goal = goal + goal;
-        return goal.contains(s);
+        s = s + s;
+        return s.contains(goal);//
     }
 }
